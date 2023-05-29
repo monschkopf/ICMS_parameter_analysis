@@ -25,7 +25,7 @@ nr_trials = size(stim_info.stim_channels,2);
 
 % parameters:
 
-nr_combinations_per_channel = 4;
+nr_combinations_per_channel = 5;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -69,9 +69,9 @@ single_channels = find(stim_info.real_unique_combinations(2,:) ==0);
 % idx_freq_200 = single_channels(5:nr_combinations_per_channel:end);
 %stim_info.dummy_channel_atributes(3,single_channels(2:nr_combinations_per_channel:end)) = 40;
 %stim_info.dummy_channel_atributes(3,single_channels(3:nr_combinations_per_channel:end)) = 80;
-stim_info.dummy_channel_atributes(4,single_channels(1:nr_combinations_per_channel:end)) = 25;
-stim_info.dummy_channel_atributes(4,single_channels(2:nr_combinations_per_channel:end)) = 50;
-stim_info.dummy_channel_atributes(4,single_channels(3:nr_combinations_per_channel:end)) = 75;
+%stim_info.dummy_channel_atributes(4,single_channels(1:nr_combinations_per_channel:end)) = 25;
+stim_info.dummy_channel_atributes(4,single_channels(2:nr_idccombinations_per_channel:end)) = 50;
+%stim_info.dummy_channel_atributes(4,single_channels(3:nr_combinations_per_channel:end)) = 75;
 stim_info.dummy_channel_atributes(4,single_channels(4:nr_combinations_per_channel:end)) = 100;
 
 % get stim pulse times:
